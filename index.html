@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Torna o documento funcional no navegador Edge-->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, que suporta a maioria dos caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a configuração de visualização inicial para dispositivos móveis -->
+    <meta name="author" content="Lucas Sobral"> <!-- Define o autor da página -->
+    <meta name="description" content="Projeto de limpeza das ruas">
+    <!-- Fornece uma descrição breve da página para mecanismos de busca -->
+    <meta name="keywords" content="CSS3, HTML5, FIAP"> <!-- Lista de palavras-chave relacionadas à página -->
+    <title>KIT ON</title> <!-- Define o título da página, que aparecerá na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa um arquivo externo de estilo CSS chamado "style.css" -->
+    <link rel="icon" href="./assets/Logo.png"> <!-- Define o ícone da página exibido na aba do navegador -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><!--Link de integração do bootstrap-->
+</head> 
+
+
+<body>
+    <!--Menu de navegação Bootstrap-->
+    <nav class="navbar navbar-expand-lg cabecalho">
+        <div class="container-fluid"><!--Primeira divisão do menu de navegação: Logo e Nome da empresa-->
+          <a class="navbar-brand cabecalho-titulo text-light" href="#"><img src="./assets/LogoBranco.png" width="50" height="40" alt="Logo da empresa"><strong class="text-light cabecalho-titulo-destaque">KIT</strong>ON</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span><!--Botão logo e nome da empresa-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav"><!--Segunda divisão do menu de navegação: Links de navegação-->
+            <ul class="navbar-nav"><!--Lista com itens de navegação-->
+              <li class="nav-item light">
+                <a href="#" class="nav-link text-light">Seu Armário</a><!--Link de navegação-->
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light">Contato</a><!--Link de navegação-->
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light">Login</a><!--Link de navegação-->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!--Section do banner-->
+    <div id="carouselExampleAutoplaying" class="carousel slide banner" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src='./assets/banner1.svg' class="d-block w-100" alt="..."><!--Imagem do banner-->
+            </div>
+            <div class="carousel-item">
+                <img src='./assets/banner2.svg' class="d-block w-100" alt="..."><!--Imagem do banner-->
+            </div>
+            <div class="carousel-item">
+                <img src='./assets/banner3.svg' class="d-block w-100" alt="..."><!--Imagem do banner-->
+            </div>
+        </div>
+        <!--Botão de retornar imagem-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!--Botão de avançar imagem-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Section do Sobre nós-->
+    <section class="sobre_nos">
+        <img src="./assets/Logo.png" alt="Logo KIT ON" class="sobre_nos-logo"><!--Imagem do Logo-->
+        <div class="sobre_nos-textos"><!--Section com informações-->
+            <h2 class="sobre_nos-textos-titulo">Sobre nós</h2><!--Título da sessão-->
+            <p class="sobre_nos-textos-texto">O projeto KIT ON nasceu da ideia de diminuir a quantidade de lixo nas
+                ruas. E para fazer isso, escolhemos o método de conscientizar as pessoas, porém, não entregando
+                informações massantes e desncessárias para o público, e sim, de maneira interativa. De forma que os
+                usuários teriam um meio de administrar seus alimentos e receber informações sobre o formas de utiliza-lo
+                e a maneira correta de descarta-lo, junto de avisos sobre a importância o descarte de lixo correto.</p><!--Texto sobre a empresa-->
+        </div>
+    </section>
+
+    <!--Sessão sobre a importância da ação da empresa-->
+    <section class='importancia'>
+        <div class='importancia-section'><!--Divisão com a primeira parte da sessão da importância-->
+            <div class='importancia-section-textos'><!--Divisão com textos sobre a importância-->
+                <h3 class="importancia-textos-titulo">Importância</h3><!--Título da sessão-->
+                <p class="importancia-textos-texto">Descartar o lixo de maneira correta pode trazer diversos benefícios
+                    para toda a humanidade. Quando se é separado o lixo de maneira correta, se facilita os meios de
+                    tratamento deles e diminuem a chance de ter impactos nocivos para o ambiente.
+                </p><!--Texto da sessão-->
+            </div>
+            <img src="./assets/Enfeite.svg" class="importancia-enfeite" alt="Enfeite visual"><!--Imagem enfeite de tela-->
+        </div>
+        <div class='importancia-section'><!--Segunda divisão da sessão da importância-->
+            <img src="./assets/Enfeite.svg" class="importancia-enfeite2" alt="Enfeite visual"><!--Imagem enfeite de tela-->
+            <p class="importancia-textos-texto">Alguns dos benefícios do descarte apropriado do lixo seria a diminuição
+                da poluição, diminuição de situações de alagamento, diminuição do gasto com limpezas urbanas,
+                valorização dos pontos turísticos, Descontaminação do lençol freático.</p><!--Texto da sessão-->
+        </div>
+    </section>
+
+    <!--Sessão com informações de como a empresa trabalha-->
+    <section class="como_trabalhamos">
+        <div class="como_trabalhamos-info"><!--Divisão com textos da sessão-->
+            <h2 class="como_trabalhamos-titulo">Como trabalhamos</h2><!--Título da sessão-->
+            <p class="como_trabalhamos-texto ">Ao acessar a rede KIT ON, você poderá registrar todos os alimentos
+                presentes na sua casa, sendo necessário junto deles adicionar suas respectivas datas de validade. Após
+                isso, nós separaremos receitas que podem ser cozinhadas utilizando os ingredientes registrados.</p><!--Texto da sessão-->
+            <p class="como_trabalhamos-texto2">E caso a data de validade se aproxime, você receberá a avisos, a
+                forma correta de descarta-lo e a importância disso.</p><!--Texto da sessão-->
+            <p class="como_trabalhamos-texto3">Para aproveitar nossos benefícios, basta entrar na rede KIT ON:</p><!--Texto da sessão-->
+            <div class="como_trabalhamos-botoes"><!--Divisão com os botões de navegação-->
+                <a class="como_trabalhamos-button" href="#">Login</a><!--Botões de navegação-->
+                <a class="como_trabalhamos-button" href="#">Duvidas</a><!--Botões de navegação-->
+            </div>
+        </div>
+        <img src="./assets/Enfeite2.svg" alt="Enfeite visual" class="como_trabalhamos-enfeite"><!--Imagem enfeite de tela-->
+    </section>
+    <!--Sessão de vantagens-->
+    <section class='vantagens'>
+        <h2 class="vantagens-titulo">Vantagens</h2><!--Titulo da sessão de vantagens da empresa-->
+        <div class="cards"><!--Divisão de cards bootstrap-->
+            <div class="card"><!--Divisão de um card único-->
+                <img src="./assets/ImagemReceitas.svg" alt="Imagem-Desbrave novas receitas" class="imagem-card"><!--Imagem de um card-->
+                <p class="card-texto">Desbrave novas receitas</p><!--Titulo do card-->
+            </div>
+            <div class="card"><!--Divisão de um card único-->
+                <img src="./assets/ImagemIngredientes.svg" alt="Imagem-Controle seus ingredientes" class="imagem-card"><!--Imagem de um card-->
+                <p class="card-texto">Controle seus ingredientes</p><!--Titulo do card-->
+            </div>
+            <div class="card"><!--Divisão de um card único-->
+                <img src="./assets/Ruas.svg" alt="Imagem-Ajude a limpar as ruas" class="imagem-card"><!--Imagem de um card-->
+                <p class="card-texto">Ajude a limpar as ruas</p><!--Titulo do card-->
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão do footer/Colunas em bootstrap-->
+    <div class="container text-center footer">
+        <div class="row"><!--Divisão de uma linha das colunas-->
+            <div class="col coluna">
+                <a href="#" class="footer-link">Seu Armário</a><!--Texto de uma coluna-->
+            </div>
+            <div class="col coluna">
+                <a href="#" class="footer-link">Nos contate</a><!--Texto de uma coluna-->
+            </div>
+            <div class="col coluna">
+                <a href="#" class="footer-link">Login/Cadastro</a><!--Texto de uma coluna-->
+            </div>
+            <div class="col coluna">
+                <a href="#" class='footer-link'>Termos de Uso</a><!--Texto de uma coluna-->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script><!--Script de integração do bootstrap-->
+</body>
+</html>
